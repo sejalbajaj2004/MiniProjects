@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/eb3facfca4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="box">
+       
+        <div class="container">
+            <input type="text" id="display">
+            <table>
+                
+                <tr>
+                    <td><button style="background-color: grey;" onclick="cleardisplay()">AC</button></td>
+                    <td><button  style="background-color: grey; font-size: 120%;" onclick="clearinput()"><i class="fa-solid fa-xmark"></i></button></td>
+                    <td><button  style="background-color: grey;" onclick="addsymbol('%')">%</button></td>
+                    <td><button style="background-color:  rgb(252, 130, 30);" onclick="addsymbol('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addsymbol('7')">7</button></td>
+                    <td><button onclick="addsymbol('8')">8</button></td>
+                    <td><button onclick="addsymbol('9')">9</button></td>
+                    <td><button style="background-color:  rgb(252, 130, 30);" onclick="addsymbol('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addsymbol('4')">4</button></td>
+                    <td><button onclick="addsymbol('5')">5</button></td>
+                    <td><button onclick="addsymbol('6')">6</button></td>
+                    <td><button style="background-color: rgb(252, 130, 30);" onclick="addsymbol('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addsymbol('1')">1</button></td>
+                    <td><button onclick="addsymbol('2')">2</button></td>
+                    <td><button onclick="addsymbol('3')">3</button></td>
+                    <td><button style="background-color:  rgb(252, 130, 30);" onclick="addsymbol('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="merged-button" onclick="addsymbol('0')">0</button></td>
+                    <td><button onclick="addsymbol('.')">.</button></td>
+                    <td><button style="background-color:  rgb(252, 130, 30);" onclick="calculate('=')">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
